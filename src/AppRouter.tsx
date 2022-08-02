@@ -1,14 +1,12 @@
 import React from "react";
 import {
-    BrowserRouter as Router,
     Routes,
     Route,
-    Link,
     BrowserRouter,
 
 } from "react-router-dom";
-import Albums from "./components/Albums";
-import AlbumDetails from "./components/AlbumDetails";
+import Albums from "./screens/Albums";
+import AlbumDetails from "./screens/AlbumDetails";
 
 export default function AppRouter() {
     return (

@@ -1,3 +1,5 @@
+import env from "react-dotenv";
+
 export const urls = {
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: env.API_URL,
 };

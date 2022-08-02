@@ -46,14 +46,11 @@
 }
 
 .details-container {
-  background: #d6e8f7;
-  display: grid;
-  justify-items: center;
-  align-content: space-around;
+  margin-top: 7vh;
 }
 
 .details-title {
-  text-align: center;
+  text-align: left !important;
 }
 
 .loadmore-list {

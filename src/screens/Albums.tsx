@@ -1,13 +1,11 @@
-import { Avatar, Breadcrumb, Button, List } from 'antd';
+import { Breadcrumb, Button, List } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AlbumListItemComponent from '../components/AlbumListItemComponent';
 import { getAlbumsAction } from '../redux/actions';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { AlbumType } from '../types';
 
-interface AlbumType {
-    title: string;
-    id: string;
-}
 
 const limit = 20;
 const Albums: React.FC = () => {
@@ -66,9 +64,8 @@ const Albums: React.FC = () => {
                         actions={[<Button onClick={() => navigate("/albums/" + item.id)}>details</Button>
                         ]}
                     >
-                        <Avatar size={64} src={'https://cdn2.iconfinder.com/data/icons/instagram-filled-outline/19/16-512.png'} />
-                        <List.Item.Meta
-                            title={item?.title}
+                        <AlbumListItemComponent
+                            album={item}
                         />
                     </List.Item>
                 )}

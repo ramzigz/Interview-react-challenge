@@ -1,26 +1,8 @@
+import { DataType } from '../../types';
 import { GET_ALBUMS_FAILED, GET_ALBUMS_REQUEST, GET_ALBUMS_SUCCESS, GET_ALBUM_PHOTOS_FAILED, GET_ALBUM_PHOTOS_REQUEST, GET_ALBUM_PHOTOS_SUCCESS } from '../types';
 
-interface AlbumType {
-  title: string;
-  id: string;
-}
-interface AlbumPhotosType {
-  albumId: number,
-  id: number,
-  title: string,
-  url: string,
-  thumbnailUrl: string
-}
 
-interface DataType {
-  loading: boolean,
-  detailsLoading: boolean,
-  albums: AlbumType[],
-  selectedAlbum: AlbumType | undefined,
-  albumPhotos: AlbumPhotosType[],
-  albumsStart: number,
-  photosStart: number
-}
+
 
 const INITIAL_STATE: DataType = {
   loading: false,
