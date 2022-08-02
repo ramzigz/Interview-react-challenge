@@ -52,7 +52,7 @@ window.env = {
   "PAPERSIZE": "letter",
   "SESSION_MANAGER": "local/genext-HP-Compaq-Elite-8300-SFF:@/tmp/.ICE-unix/5019,unix/genext-HP-Compaq-Elite-8300-SFF:/tmp/.ICE-unix/5019",
   "NODE": "/usr/local/bin/node",
-  "npm_package_name": "antd-demo-ts",
+  "npm_package_name": "aventique-test",
   "XDG_MENU_PREFIX": "gnome-",
   "LC_ADDRESS": "en_US.UTF-8",
   "GDK_BACKEND": "x11",
